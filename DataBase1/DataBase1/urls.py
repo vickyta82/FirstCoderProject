@@ -1,4 +1,4 @@
-"""DataBase1 URL Configuration
+"""ProjectPlease URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.0/topics/http/urls/
@@ -15,8 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from DataBase1.views import thankyou
+from DataBase1.views import greeting, thankyou, start_up
+
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('greeting/', greeting),
+    path('thankyou/', thankyou),
+    path('startup/', start_up)
 ]
