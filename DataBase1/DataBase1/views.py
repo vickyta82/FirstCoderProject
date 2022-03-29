@@ -1,10 +1,10 @@
 from django.http import HttpResponse
 from django.template import Template, Context
 
-def greeting(request):
-    return HttpResponse("Welcome from my first Django based website")
-def thankyou(request):    
-    return HttpResponse("<h1> Thanks </h1> <p> Sebas and Eze for helping me</P>")
+def professor(request):
+    return HttpResponse("Faculty")
+def student(request):    
+    return HttpResponse("Student Info")
 
 def start_up(request):
     file = open(r"C:\Users\vlapa\Desktop\Python\FirstCoderProject\DataBase1\DataBase1\templates\DBTemp1.html", 'r')    

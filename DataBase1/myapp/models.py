@@ -1,9 +1,9 @@
 from django.db import models
 
-# Create your models here.
+
 class Subject(models.Model):
-        name = models.CharField(max_length=50)
-        number = models.IntegerField()
+    name = models.CharField(max_length=50)
+    number = models.IntegerField(primary_key=True)
 
 class Student(models.Model):
     name = models.CharField(max_length=40)
