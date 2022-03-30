@@ -55,7 +55,7 @@ ROOT_URLCONF = 'DataBase1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [r"C:\Users\vlapa\Desktop\Python\FirstCoderProject\DataBase1\DataBase1\templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
